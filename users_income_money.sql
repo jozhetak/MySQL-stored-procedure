@@ -43,8 +43,6 @@ CREATE PROCEDURE users_income_money(IN user_role INT,
         
         DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
 
-
-
         -- Открытие курсора и считывание из него первой пары значений(userId, sum) - заработок партнера за сегодня
         -- в переменные user_id и amount
         
